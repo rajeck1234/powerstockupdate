@@ -25,7 +25,6 @@ async function loadStocks() {
         
         div.innerHTML += `
         <div class="stock">
-            <h3>${coun}</h3>
             <h3>${stock.name}</h3>
             <p>Price: ₹${stock.price}</p>
             <button onclick="buyStock('${stock.name}')">
