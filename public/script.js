@@ -154,7 +154,7 @@ async function loadMomentum30() {
 
     const res = await fetch("/momentum30");
     const data = await res.json();
-    coun++
+    coun1++
     const container = document.getElementById("momentum30");
     container.innerHTML = "";
 
