@@ -1,0 +1,147 @@
+/* ---------- Global ---------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+.stock {
+    font-size: 15px;
+}
+
+/* ---------- Header ---------- */
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e293b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ---------- Sections ---------- */
+.section-title {
+    padding: 14px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ---------- Container ---------- */
+.container {
+    padding: 12px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ---------- Stock Card ---------- */
+.stock {
+    background-color: #1e293b;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* ---------- Stock Info ---------- */
+.stock-info {
+    flex: 1;
+    min-width: 140px;
+}
+
+.stock-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.stock-info p {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* ---------- Buttons ---------- */
+button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Buy Button */
+.buy {
+    background-color: #22c55e;
+    color: white;
+}
+
+/* ---------- ALERT STYLES ---------- */
+.stock.alert-stock {
+    border-left: 6px solid red !important;
+    background-color: rgba(255, 0, 0, 0.2) !important;
+}
+
+.stock button.sell-alert {
+    background-color: red !important;
+    color: white !important;
+    border: 2px solid darkred !important;
+    animation: blink 1s infinite;
+}
+
+/* ---------- Stop Alarm Button ---------- */
+.stop-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: orange;
+    padding: 12px 20px;
+    font-size: 16px;
+    display: none;
+    border-radius: 10px;
+}
+
+/* ---------- Add Button ---------- */
+.top-actions {
+    padding: 12px 18px;
+}
+
+.add-btn {
+    background-color: #3b82f6;
+    color: white;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* ---------- Animation ---------- */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* ---------- 📱 MOBILE RESPONSIVE ---------- */
+@media (max-width: 600px) {
+
+    .stock {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 6px;
+    }
+
+    .container {
+        padding: 10px 14px;
+    }
+
+    .section-title {
+        font-size: 17px;
+    }
+}

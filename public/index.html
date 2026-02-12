@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>📈 Live Trading</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>📈 Live Trading</header>
+
+<!-- Momentum Sections -->
+<div class="section-title">🔥 5 Sec Momentum</div>
+<div class="container" id="momentum30"></div>
+
+<div class="section-title">🔥 3 Min Momentum</div>
+<div class="container" id="momentum3"></div>
+
+<!-- Add Stock -->
+<div class="top-actions">
+<button class="add-btn" onclick="addStock()">➕ Add Stock</button>
+</div>
+
+<!-- Live Stocks -->
+<div class="section-title">📊 Live Stocks</div>
+<div class="container" id="stocks"></div>
+
+<!-- Portfolio -->
+<div class="section-title">💼 Your Portfolio</div>
+<div class="container" id="portfolio"></div>
+
+<button id="stopAlarm" class="stop-btn" onclick="stopAlarm()">Stop Alarm</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
